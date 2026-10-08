@@ -36,18 +36,6 @@ An Arduino Uno based smart energy meter simulated in Tinkercad. It measures volt
 4. If voltage exceeds **250 V** or current exceeds **10 A**, the relay turns off, the red LED and buzzer activate, and a fault message is displayed.
 5. After the fault, pressing the reset button re-enables the relay only if the readings are back within safe limits.
 
-## Pin Connections
-
-| Pin | Connected To |
-|---|---|
-| A0 | Voltage potentiometer |
-| A1 | Current potentiometer |
-| A4 / A5 | LCD SDA / SCL |
-| Digital pin (relay) | Transistor base via resistor |
-| Digital pins | Red LED, Green LED, Buzzer, Reset button |
-
-> Adjust the pin numbers above to match your code.
-
 ## Tech Stack
 
 Arduino Uno, Embedded C/C++, Tinkercad Circuits, I2C (LiquidCrystal_I2C)
